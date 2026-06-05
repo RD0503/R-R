@@ -12,139 +12,135 @@
   <link rel="stylesheet" href="landing.css" />
 </head>
 <body>
-  <nav class="navbar">
-    <div class="navbar-inner">
-      <a href="#inicio" class="navbar-logo">
+  <!-- Header -->
+  <nav class="site-header">
+    <div class="site-header__inner">
+      <a href="#inicio" class="site-header__logo">
         <img src="Imagenes/LOGO%20SIN%20NOMBRE%20VR.png" alt="Victoria Rodríguez" class="h-10 w-auto object-contain" />
       </a>
-      <ul class="nav-links">
+      <ul class="site-header__nav">
         <li><a href="#inicio">Inicio</a></li>
         <li><a href="#presentacion">Presentación</a></li>
         <li><a href="#ramas">Ramas</a></li>
         <li><a href="#redes">Redes</a></li>
         <li><a href="#contacto">Contacto</a></li>
       </ul>
-      <label for="menu-toggle" class="mobile-menu-button" aria-label="Abrir menú">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M4 6h16M4 12h16M4 18h16" />
-        </svg>
-      </label>
-      <input type="checkbox" id="menu-toggle" class="mobile-menu-toggle" />
-      <div class="mobile-menu">
-        <a href="#inicio">Inicio</a>
-        <a href="#presentacion">Presentación</a>
-        <a href="#ramas">Ramas</a>
-        <a href="#redes">Redes</a>
-        <a href="#contacto">Contacto</a>
-      </div>
     </div>
   </nav>
 
   <main>
-    <section id="inicio" class="section section-hero">
-      <div class="section-inner hero-grid">
-        <div class="hero-copy animate fade-up">
-          <img src="Imagenes/LOGO%20VR.png" alt="Victoria Rodríguez" class="h-48 w-auto object-contain logo-large" />
-          <p class="eyebrow">Abogada</p>
+    <!-- Hero / Inicio -->
+    <section id="inicio" class="page-section page-section--hero">
+      <div class="hero__logo-area">
+        <div class="hero__logo-banner">
+          <img src="Imagenes/Logo VR grande.png" alt="Victoria Rodríguez" class="hero__logo" />
+        </div>
+      </div>
+
+      <div class="page-section__inner hero__grid">
+        <div class="hero__content animate fade-up">
+          <p class="hero__eyebrow">Abogada</p>
           <h1>Victoria Rodríguez</h1>
-          <p class="hero-text">Especialista en Derecho Civil y Comercial</p>
-          <div class="hero-meta">
+          <p class="hero__text">Especialista en Derecho Civil y Comercial</p>
+          <div class="hero__meta">
             <span>Jujuy</span>
             <span>Tucumán</span>
             <span>Buenos Aires</span>
           </div>
-          <a href="#contacto" class="btn btn-primary">Solicitar Consulta</a>
+          <a href="#contacto" class="btn btn--primary">Solicitar Consulta</a>
         </div>
-        <div class="hero-media animate fade-up delay-1">
-          <div class="hero-frame">
+        <div class="hero__media animate fade-up delay-1">
+          <div class="hero__frame">
             <p>Imagen del estudio</p>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="presentacion" class="section section-light">
-      <div class="section-inner">
-        <h2 class="section-title">Presentación</h2>
-        <div class="grid grid-two gap-32">
-          <div class="feature-card animate fade-up delay-1">
-            <div class="image-placeholder">
+    <!-- Presentación -->
+    <section id="presentacion" class="page-section page-section--light">
+      <div class="page-section__inner">
+        <h2 class="page-section__title">Presentación</h2>
+        <div class="util-grid util-grid--two gap-32">
+          <div class="card card--feature animate fade-up delay-1">
+            <div class="media__placeholder">
               <p>Fotografía profesional</p>
             </div>
           </div>
-          <div class="feature-copy animate fade-up delay-2">
+          <div class="hero__content animate fade-up delay-2">
             <h3>Victoria Rodríguez</h3>
             <p>Abogada colegiada con más de 10 años de experiencia en el ejercicio independiente del derecho. Mi carrera profesional se ha enfocado en brindar asesoramiento integral y de calidad a particulares y empresas.</p>
             <p>Especializada en derecho civil y comercial, con un profundo conocimiento de los sistemas jurídicos de las provincias donde ejerzo.</p>
-            <div class="stats-grid">
+            <div class="stats__grid">
               <div>
-                <p class="stat-value">10+</p>
-                <p class="stat-label">Años de experiencia</p>
+                <p class="stats__value">10+</p>
+                <p class="stats__label">Años de experiencia</p>
               </div>
               <div>
-                <p class="stat-value">500+</p>
-                <p class="stat-label">Casos asesorados</p>
+                <p class="stats__value">500+</p>
+                <p class="stats__label">Casos asesorados</p>
               </div>
               <div>
-                <p class="stat-value">1000+</p>
-                <p class="stat-label">Consultas realizadas</p>
+                <p class="stats__value">1000+</p>
+                <p class="stats__label">Consultas realizadas</p>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="study-card animate fade-up delay-3">
-          <div class="study-image">
+        <div class="card card--studio animate fade-up delay-3">
+          <div class="studio__image">
             <p>Fotografía del estudio</p>
           </div>
           <div>
             <h4>Nuestro Espacio</h4>
             <p>Estudio jurídico moderno y profesional, diseñado para brindar un ambiente de confianza y confidencialidad a nuestros clientes.</p>
-            <p class="small-label">Consultas presenciales y virtuales disponibles</p>
+            <p class="small__label">Consultas presenciales y virtuales disponibles</p>
           </div>
         </div>
 
-        <div class="education-card animate fade-up delay-4">
+        <div class="card card--education animate fade-up delay-4">
           <h4>Formación Académica</h4>
-          <div class="education-item">
-            <p class="education-title">Licenciatura en Derecho</p>
+          <div class="education__item">
+            <p class="education__title">Licenciatura en Derecho</p>
             <p>Universidad Nacional de Jujuy</p>
-            <p class="education-year">2010</p>
+            <p class="education__year">2010</p>
           </div>
-          <div class="education-item">
-            <p class="education-title">Especialización en Derecho Comercial</p>
+          <div class="education__item">
+            <p class="education__title">Especialización en Derecho Comercial</p>
             <p>Colegio de Abogados</p>
-            <p class="education-year">2015</p>
+            <p class="education__year">2015</p>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="ramas" class="section section-light">
-      <div class="section-inner">
-        <h2 class="section-title">Áreas de Práctica</h2>
-        <div class="grid grid-three gap-24">
-          <article class="service-card animate fade-up delay-1">
+    <!-- Áreas / Ramas -->
+    <section id="ramas" class="page-section page-section--light">
+      <div class="page-section__inner">
+        <h2 class="page-section__title">Áreas de Práctica</h2>
+        <div class="util-grid util-grid--three gap-24">
+          <article class="card card--service animate fade-up delay-1">
             <h3>Derecho Civil</h3>
             <p>Asesoramiento integral en contratos, sucesiones, responsabilidad civil y resolución de conflictos entre particulares.</p>
           </article>
-          <article class="service-card animate fade-up delay-2">
+          <article class="card card--service animate fade-up delay-2">
             <h3>Derecho Comercial</h3>
             <p>Asesoramiento a empresas en operaciones mercantiles, contratos comerciales y relaciones societarias.</p>
           </article>
-          <article class="service-card animate fade-up delay-3">
+          <article class="card card--service animate fade-up delay-3">
             <h3>Derecho Laboral</h3>
             <p>Representación de trabajadores y empleadores en conflictos laborales, despidos y liquidaciones.</p>
           </article>
-          <article class="service-card animate fade-up delay-4">
+          <article class="card card--service animate fade-up delay-4">
             <h3>Contratos</h3>
             <p>Redacción, revisión y negociación de contratos civiles y comerciales.</p>
           </article>
-          <article class="service-card animate fade-up delay-5">
+          <article class="card card--service animate fade-up delay-5">
             <h3>Asesoramiento Empresarial</h3>
             <p>Consultoría jurídica estratégica para empresas y comerciantes.</p>
           </article>
-          <article class="service-card animate fade-up delay-6">
+          <article class="card card--service animate fade-up delay-6">
             <h3>Consultoría Jurídica</h3>
             <p>Consultas puntuales y análisis de situaciones jurídicas complejas.</p>
           </article>
@@ -152,25 +148,26 @@
       </div>
     </section>
 
-    <section class="section">
-      <div class="section-inner">
-        <h2 class="section-title">Testimonios de Clientes</h2>
-        <div class="grid grid-three gap-24">
-          <article class="testimonial-card animate fade-up delay-1">
+    <!-- Testimonios -->
+    <section class="page-section">
+      <div class="page-section__inner">
+        <h2 class="page-section__title">Testimonios de Clientes</h2>
+        <div class="util-grid util-grid--three gap-24">
+          <article class="card card--testimonial animate fade-up delay-1">
             <p>“Victoria brindó asesoramiento profesional y personalizado. Su dedicación y compromiso fueron excepcionales en la resolución de nuestro caso.”</p>
             <div class="testimonial-footer">
               <strong>Juan Martínez</strong>
               <span>Empresario - Buenos Aires</span>
             </div>
           </article>
-          <article class="testimonial-card animate fade-up delay-2">
+          <article class="card card--testimonial animate fade-up delay-2">
             <p>“Su conocimiento profundo del derecho comercial resultó invaluable para nuestra empresa. Recomendado sin dudas.”</p>
             <div class="testimonial-footer">
               <strong>María González</strong>
               <span>Directora - Tucumán</span>
             </div>
           </article>
-          <article class="testimonial-card animate fade-up delay-3">
+          <article class="card card--testimonial animate fade-up delay-3">
             <p>“Transparencia, profesionalismo y resultados concretos. Victoria es una excelente abogada y una gran persona.”</p>
             <div class="testimonial-footer">
               <strong>Carlos López</strong>
@@ -181,59 +178,61 @@
       </div>
     </section>
 
-    <section id="redes" class="section section-light">
-      <div class="section-inner">
-        <h2 class="section-title">Noticias y Logros</h2>
-        <div class="grid grid-three gap-24">
-          <article class="news-card animate fade-up delay-1">
-            <span class="news-label">Destacado</span>
+    <!-- Noticias y Logros / Redes -->
+    <section id="redes" class="page-section page-section--light">
+      <div class="page-section__inner">
+        <h2 class="page-section__title">Noticias y Logros</h2>
+        <div class="util-grid util-grid--three gap-24">
+          <article class="card card--news animate fade-up delay-1">
+            <span class="news__label">Destacado</span>
             <h3>Título de Logro</h3>
             <p>Descripción de logro, caso destacado o reconocimiento profesional obtenido recientemente.</p>
-            <span class="news-date">Junio 2024</span>
+            <span class="news__date">Junio 2024</span>
           </article>
-          <article class="news-card animate fade-up delay-2">
-            <span class="news-label">Destacado</span>
+          <article class="card card--news animate fade-up delay-2">
+            <span class="news__label">Destacado</span>
             <h3>Título de Logro</h3>
             <p>Descripción de logro, caso destacado o reconocimiento profesional obtenido recientemente.</p>
-            <span class="news-date">Mayo 2024</span>
+            <span class="news__date">Mayo 2024</span>
           </article>
-          <article class="news-card animate fade-up delay-3">
-            <span class="news-label">Destacado</span>
+          <article class="card card--news animate fade-up delay-3">
+            <span class="news__label">Destacado</span>
             <h3>Título de Logro</h3>
             <p>Descripción de logro, caso destacado o reconocimiento profesional obtenido recientemente.</p>
-            <span class="news-date">Abril 2024</span>
+            <span class="news__date">Abril 2024</span>
           </article>
         </div>
       </div>
     </section>
 
-    <section id="contacto" class="section section-contact">
-      <div class="contact-grid section-inner">
-        <div class="contact-info animate fade-up delay-1">
-          <h2 class="section-title">Contacto</h2>
-          <div class="info-block">
-            <p class="info-label">Correo Electrónico</p>
+    <!-- Contacto -->
+    <section id="contacto" class="page-section page-section-contact">
+      <div class="contact__grid page-section__inner">
+        <div class="contact__info animate fade-up delay-1">
+          <h2 class="page-section__title">Contacto</h2>
+          <div class="info__block">
+            <p class="info__label">Correo Electrónico</p>
             <a href="mailto:victoria@estudio.com">victoria@estudio.com</a>
           </div>
-          <div class="info-block">
-            <p class="info-label">Teléfono</p>
+          <div class="info__block">
+            <p class="info__label">Teléfono</p>
             <a href="tel:+5491234567890">+54 9 1234 567890</a>
           </div>
-          <div class="info-block">
-            <p class="info-label">Oficinas</p>
+          <div class="info__block">
+            <p class="info__label">Oficinas</p>
             <p>Buenos Aires</p>
             <p>Tucumán</p>
             <p>Jujuy</p>
           </div>
-          <div class="info-block">
-            <p class="info-label">Redes sociales</p>
-            <div class="social-links">
+          <div class="info__block">
+            <p class="info__label">Redes sociales</p>
+            <div class="social__links">
               <a href="#">LinkedIn</a>
               <a href="#">Instagram</a>
             </div>
           </div>
         </div>
-        <div class="contact-form animate fade-up delay-2">
+        <div class="contact__form animate fade-up delay-2">
           <h3>Enviar Mensaje</h3>
           <form>
             <label>
@@ -252,34 +251,35 @@
               Consulta
               <textarea rows="4" placeholder="Describe tu situación jurídica..." required></textarea>
             </label>
-            <button type="submit" class="btn btn-secondary">Enviar Consulta</button>
+            <button type="submit" class="btn btn--secondary">Enviar Consulta</button>
           </form>
         </div>
       </div>
     </section>
   </main>
 
-  <footer class="footer">
-    <div class="footer-inner">
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="site-footer__inner">
       <div>
-        <img src="Imagenes/LOGO%20VR.png" alt="Victoria Rodríguez" class="h-20 w-auto object-contain logo-large" />
+        <img src="Imagenes/Estilo black.png" alt="Victoria Rodríguez" class="h-20 w-auto object-contain hero__logo" />
         <p>Asesoramiento jurídico profesional especializado en derecho civil y comercial.</p>
       </div>
       <div>
-        <p class="footer-title">Navegación</p>
+        <p class="site-footer__title">Navegación</p>
         <a href="#inicio">Inicio</a>
         <a href="#presentacion">Presentación</a>
         <a href="#ramas">Servicios</a>
         <a href="#contacto">Contacto</a>
       </div>
       <div>
-        <p class="footer-title">Contacto Directo</p>
+        <p class="site-footer__title">Contacto Directo</p>
         <a href="mailto:victoria@estudio.com">victoria@estudio.com</a>
         <a href="tel:+5491234567890">+54 9 1234 567890</a>
       </div>
     </div>
-    <div class="footer-bottom">
-      <p>&copy; 2024 Victoria Rodríguez. Todos los derechos reservados.</p>
+    <div class="site-footer__bottom">
+      <p>&copy; 2026 Victoria Rodríguez. Todos los derechos reservados.</p>
       <p>Diseño y desarrollo por Desarrollo Web</p>
     </div>
   </footer>
