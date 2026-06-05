@@ -353,6 +353,11 @@ button {
   border-color: rgba(0,0,0,0.18);
 }
 
+/* Imagenes en las secciones de placeholder:
+  Reemplazar el texto dentro de .media__placeholder o .studio__image
+  por un <img src="Imagenes/archivo.jpg" alt="..." />.
+  El estilo siguiente asegura que la imagen llene bien el contenedor.
+*/
 .media__placeholder {
   height: 100%;
   min-height: 420px;
@@ -414,6 +419,16 @@ button {
   justify-content: center;
   color: var(--muted);
 }
+
+.media__placeholder img,
+.studio__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: inherit;
+}
+
 .card--education{
   /* align-items: center; */
   text-align: center;
