@@ -18,6 +18,13 @@
       <a href="#inicio" class="site-header__logo">
         <img src="Imagenes/LOGO%20SIN%20NOMBRE%20VR.png" alt="Victoria Rodríguez" class="h-10 w-auto object-contain" />
       </a>
+      <!-- Menú móvil: checkbox oculto controla el desplegable del nav -->
+      <input type="checkbox" id="menu-toggle" class="site-header__mobile-toggle" />
+      <label for="menu-toggle" class="site-header__mobile-btn" aria-label="Abrir menú">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M4 7h16M4 12h16M4 17h16" />
+        </svg>
+      </label>
       <ul class="site-header__nav">
         <li><a href="#inicio">Inicio</a></li>
         <li><a href="#presentacion">Presentación</a></li>
@@ -25,6 +32,13 @@
         <li><a href="#redes">Redes</a></li>
         <li><a href="#contacto">Contacto</a></li>
       </ul>
+      <div class="site-header__mobile-nav">
+        <a href="#inicio">Inicio</a>
+        <a href="#presentacion">Presentación</a>
+        <a href="#ramas">Ramas</a>
+        <a href="#redes">Redes</a>
+        <a href="#contacto">Contacto</a>
+      </div>
     </div>
   </nav>
 
